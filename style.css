@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap');
+
+:root {
+  --primary: #0d6efd;
+  --white: #ffffff;
+  --gray: #eee;
+  --gray-1: #f8f9fa;
+  --gray-2: #e9ecef;
+  --gray-3: #ffffff;
+  --gray-4: #ced4da;
+  --gray-8: #343a40;
+  --dark: #212529;
+}
+.text-purple{
+  color: #6610f2;
+}
+.bg-purple{
+  background: #6610f2 !important;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  outline: none;
+  color: var(--white);
+  text-align: left;
+  background-color: var(--white);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::selection {
+  color: var(--white);
+  background: var(--primary);
+}
+
+/* Top scroll progress-bar style*/
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--primary);
+  z-index: 10000;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  border-radius: 100px;
+} 
+
+/* Navbar style start */
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link:active {
+  color: var(--primary);
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+} 
+
+.navbar-icon {
+  width: 22px;
+  height: 15px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.navbar-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.navbar-icon span {
+  background: #2d7ef7;
+}
+
+.navbar-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.navbar-icon span:nth-child(2) {
+  top: 6px;
+}
+
+.navbar-icon span:nth-child(3) {
+  top: 12px;
+}
+
+.navbar-icon.open span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.navbar-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.navbar-icon.open span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+/* Navbar style end */
+
+/* Header style start */
+.header{
+  min-height: 100vh;
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+}
+
+.header .row{
+  align-items: center;
+}
+
+.header h1, h3{
+  color: var(--white);
+}
+
+.header .typewriter {
+		white-space: nowrap;
+		overflow: hidden;
+		animation: typewriter 3s steps(13) infinite alternate,
+		blink 500ms steps(13) infinite normal;
+		border-right: 4px solid var(--white);
+}
+
+@keyframes typewriter {
+		from {
+		width: 0%;
+		}
+		to {
+		width: 95%;
+		}
+}
+@keyframes blink {
+		from {
+		border-color: var(--white);
+		}
+		to {
+		border-color: transparent;
+		}
+}
+.header .resume-btn:hover{
+  color: var(--white);
+  background: var(--primary);
+}
+/* Header style end */
+
+/* About style start */
+/* About style end */
+
+/* Education style start */
+.education .card{
+  height: 260px;
+  border: none;
+}
+.education .card.card:hover {
+ color: var(--white);
+ background-image: linear-gradient(to right,#0d6efd, #0d6efd, #0d6efd);
+}
+/* Education style end */
+
+/* Skill style start */
+.skill .html, .css, .js, .csharp, .github{
+  width: 18px;
+}
+.skill .bootstrap{
+  width: 18px;
+}
+.skill .mvc{
+  width: 26px;
+}
+
+.skill .ado, .sqlserver{
+  width: 32px;
+}
+
+.skill .progress{
+  height: 10px;
+}
+
+.skill .progress .progress-bar{
+  height: 10px;
+}
+
+.skill .percentage {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+	
+@keyframes progress {
+		from {
+			width: 0;
+		}
+}
+/* Skill style end */
+
+/* Project style start */
+/* Project style end */
+
+/* Footer style start */
+/* Footer style end */
+   
